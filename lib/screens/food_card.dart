@@ -27,7 +27,7 @@ class FoodCard extends StatelessWidget {
         height: 270,
         width: 180,
         child: Card(
-          elevation: 4,
+          elevation: 1,
           child: Column(
             children: [
               SizedBox(
