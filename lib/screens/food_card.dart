@@ -33,7 +33,7 @@ class FoodCard extends StatelessWidget {
             children: [
               SizedBox(
                 height: 150,
-                width: 180,
+                width: 200,
                 child: Image.asset(
                   url,
                   fit: BoxFit.cover,
