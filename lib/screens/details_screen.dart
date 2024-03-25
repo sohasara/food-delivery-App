@@ -100,8 +100,12 @@ class DetailPage extends StatelessWidget {
               ),
             ],
           ),
-          Image.asset(
-            'assets/pizza4.png',
+          SizedBox(
+            height: 400,
+            width: 400,
+            child: Image.asset(
+              'assets/pizza4.png',
+            ),
           ),
         ],
       ),
