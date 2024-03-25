@@ -9,7 +9,7 @@ final info = [
   },
   {
     'id': '1',
-    'url': 'assets/burger3.jpg',
+    'url': 'assets/burger3.png',
     'item_name': 'mutton burger',
     'time': '15min',
     'rating': '4.2',
@@ -17,7 +17,7 @@ final info = [
   },
   {
     'id': '2',
-    'url': 'assets/soup2.jpg',
+    'url': 'assets/soup2.png',
     'item_name': 'chicken soup',
     'time': '15min',
     'rating': '4.2',
@@ -25,7 +25,7 @@ final info = [
   },
   {
     'id': '3',
-    'url': 'assets/pizza2.jpeg',
+    'url': 'assets/pizza2.png',
     'item_name': 'Basic Pizza',
     'time': '10min',
     'rating': '4.3',
@@ -33,7 +33,7 @@ final info = [
   },
   {
     'id': '4',
-    'url': 'assets/salad1.jpg',
+    'url': 'assets/salad1.png',
     'item_name': 'Tomatoo Salad',
     'time': '15min',
     'rating': '4.2',
@@ -41,7 +41,7 @@ final info = [
   },
   {
     'id': '5',
-    'url': 'assets/pizza3.jpeg',
+    'url': 'assets/pizza3.png',
     'item_name': 'Chicken Pizza',
     'time': '23min',
     'rating': '3.9',
@@ -73,7 +73,7 @@ final info = [
   },
   {
     'id': '9',
-    'url': 'assets/salad2.jpg',
+    'url': 'assets/salad2.png',
     'item_name': 'Fruit Salad',
     'time': '15min',
     'rating': '4.2',
@@ -81,7 +81,7 @@ final info = [
   },
   {
     'id': '10',
-    'url': 'assets/burger6.jpg',
+    'url': 'assets/burger6.png',
     'item_name': 'juicy burger',
     'time': '15min',
     'rating': '4.2',
@@ -89,7 +89,7 @@ final info = [
   },
   {
     'id': '11',
-    'url': 'assets/salad3.jpg',
+    'url': 'assets/salad3.png',
     'item_name': 'Mix Salad',
     'time': '15min',
     'rating': '4.2',
@@ -97,7 +97,7 @@ final info = [
   },
   {
     'id': '12',
-    'url': 'assets/sandwich3.webp',
+    'url': 'assets/sandwich3.png',
     'item_name': 'Chicken Sandwich',
     'time': '15min',
     'rating': '4.2',
@@ -105,7 +105,7 @@ final info = [
   },
   {
     'id': '13',
-    'url': 'assets/salad4.jpg',
+    'url': 'assets/salad4.png',
     'item_name': 'Chicken Salad',
     'time': '15min',
     'rating': '4.2',
@@ -113,7 +113,7 @@ final info = [
   },
   {
     'id': '14',
-    'url': 'assets/salad5.jpeg',
+    'url': 'assets/salad5.png',
     'item_name': 'Basic Salad',
     'time': '15min',
     'rating': '4.2',
@@ -121,7 +121,7 @@ final info = [
   },
   {
     'id': '15',
-    'url': 'assets/sandwich1.jpeg',
+    'url': 'assets/sandwich1.png',
     'item_name': 'Club Sandwich',
     'time': '15min',
     'rating': '4.2',
@@ -137,7 +137,7 @@ final info = [
   },
   {
     'id': '15',
-    'url': 'assets/sandwich4.jpeg',
+    'url': 'assets/sandwich4.png',
     'item_name': 'Beef Sandwich',
     'time': '15min',
     'rating': '4.2',
@@ -145,7 +145,7 @@ final info = [
   },
   {
     'id': '18',
-    'url': 'assets/sandwich6.jpeg',
+    'url': 'assets/sandwich6.png',
     'item_name': 'Vegetable Sandwich',
     'time': '15min',
     'rating': '4.2',
@@ -153,7 +153,7 @@ final info = [
   },
   {
     'id': '19',
-    'url': 'assets/soup5.jpeg',
+    'url': 'assets/soup5.png',
     'item_name': 'cream soup',
     'time': '15min',
     'rating': '4.2',
@@ -161,7 +161,7 @@ final info = [
   },
   {
     'id': '20',
-    'url': 'assets/sandwich5.jpg',
+    'url': 'assets/sandwich5.png',
     'item_name': 'Basic Sandwich ',
     'time': '15min',
     'rating': '4.2',
@@ -169,7 +169,7 @@ final info = [
   },
   {
     'id': '21',
-    'url': 'assets/soup1.jpg',
+    'url': 'assets/soup1.png',
     'item_name': 'tomatoo soup',
     'time': '15min',
     'rating': '4.2',
@@ -177,7 +177,7 @@ final info = [
   },
   {
     'id': '22',
-    'url': 'assets/soup3.jpeg',
+    'url': 'assets/soup3.png',
     'item_name': 'green soup',
     'time': '15min',
     'rating': '4.2',
@@ -185,7 +185,7 @@ final info = [
   },
   {
     'id': '23',
-    'url': 'assets/soup4.jpg',
+    'url': 'assets/soup4.png',
     'item_name': 'thai soup',
     'time': '15min',
     'rating': '4.2',
@@ -193,7 +193,7 @@ final info = [
   },
   {
     'id': '24',
-    'url': 'assets/burger1.webp',
+    'url': 'assets/burger1.png',
     'item_name': 'basic burger',
     'time': '15min',
     'rating': '4.2',
@@ -201,7 +201,7 @@ final info = [
   },
   {
     'id': '25',
-    'url': 'assets/burger2.jpg',
+    'url': 'assets/burger2.png',
     'item_name': 'vegan burger',
     'time': '15min',
     'rating': '4.2',
@@ -209,7 +209,7 @@ final info = [
   },
   {
     'id': '26',
-    'url': 'assets/burger4.jpeg',
+    'url': 'assets/burger4.png',
     'item_name': 'chicken burger',
     'time': '15min',
     'rating': '4.2',
@@ -217,7 +217,7 @@ final info = [
   },
   {
     'id': '27',
-    'url': 'assets/burger5.jpeg',
+    'url': 'assets/burger5.png',
     'item_name': 'beef burger',
     'time': '15min',
     'rating': '4.2',
@@ -225,7 +225,7 @@ final info = [
   },
   {
     'id': '28',
-    'url': 'assets/hotdog1.jpeg',
+    'url': 'assets/hotdog1.png',
     'item_name': 'cheese hotdog',
     'time': '15min',
     'rating': '4.2',
@@ -233,7 +233,7 @@ final info = [
   },
   {
     'id': '29',
-    'url': 'assets/hotdog2.jpeg',
+    'url': 'assets/hotdog2.png',
     'item_name': 'naga hotdog',
     'time': '15min',
     'rating': '4.2',
@@ -241,7 +241,7 @@ final info = [
   },
   {
     'id': '30',
-    'url': 'assets/hotdog3.jpeg',
+    'url': 'assets/hotdog3.png',
     'item_name': ' basic hotdog',
     'time': '15min',
     'rating': '4.2',
@@ -249,7 +249,7 @@ final info = [
   },
   {
     'id': '31',
-    'url': 'assets/hotdog4.jpg',
+    'url': 'assets/hotdog4.png',
     'item_name': 'hotdog',
     'time': '15min',
     'rating': '4.2',
