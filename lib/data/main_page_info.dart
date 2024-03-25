@@ -1,11 +1,35 @@
 final info = [
   {
+    'id': '6',
+    'url': 'assets/pizza4.png',
+    'item_name': 'Olive Pizza',
+    'time': '15min',
+    'rating': '4.2',
+    'price': '\$10.00',
+  },
+  {
+    'id': '7',
+    'url': 'assets/pizza5.png',
+    'item_name': 'Vegan Pizza',
+    'time': '15min',
+    'rating': '4.2',
+    'price': '\$10.00',
+  },
+  {
     'id': '0',
     'url': 'assets/pizza6.png',
     'item_name': ' Beef Pizza',
     'time': '15min',
     'rating': '4.2',
     'price': '\$10.00',
+  },
+  {
+    'id': '3',
+    'url': 'assets/pizza2.png',
+    'item_name': 'Basic Pizza',
+    'time': '10min',
+    'rating': '4.3',
+    'price': '\$11.00',
   },
   {
     'id': '1',
@@ -24,14 +48,6 @@ final info = [
     'price': '\$10.00',
   },
   {
-    'id': '3',
-    'url': 'assets/pizza2.png',
-    'item_name': 'Basic Pizza',
-    'time': '10min',
-    'rating': '4.3',
-    'price': '\$11.00',
-  },
-  {
     'id': '4',
     'url': 'assets/salad1.png',
     'item_name': 'Tomatoo Salad',
@@ -46,22 +62,6 @@ final info = [
     'time': '23min',
     'rating': '3.9',
     'price': '\$15.00',
-  },
-  {
-    'id': '6',
-    'url': 'assets/pizza4.png',
-    'item_name': 'Olive Pizza',
-    'time': '15min',
-    'rating': '4.2',
-    'price': '\$10.00',
-  },
-  {
-    'id': '7',
-    'url': 'assets/pizza5.png',
-    'item_name': 'Vegan Pizza',
-    'time': '15min',
-    'rating': '4.2',
-    'price': '\$10.00',
   },
   {
     'id': '8',
