@@ -11,15 +11,16 @@ class FoodCard extends StatelessWidget {
   final String time;
   final String rating;
   final String price;
+  final int index;
 
-  const FoodCard({
-    super.key,
-    required this.name,
-    required this.price,
-    required this.rating,
-    required this.time,
-    required this.url,
-  });
+  const FoodCard(
+      {super.key,
+      required this.name,
+      required this.price,
+      required this.rating,
+      required this.time,
+      required this.url,
+      required this.index});
 
   @override
   Widget build(BuildContext context) {
@@ -86,15 +87,15 @@ class FoodCard extends StatelessWidget {
                     fontSize: 18,
                   ),
                 ),
-                Consumer(builder: (context, ref, index) {
+                Consumer(builder: (context, ref, _) {
                   ref.watch(cartProvider);
                   return IconButton(
                     onPressed: () {
                       ref.read(cartProvider.notifier).addItemToCart(
                             Product(
-                              name: info[0]['item_name'].toString(),
-                              price: info[0]['price'].toString(),
-                              url: info[0]['url'].toString(),
+                              name: info[index]['item_name'].toString(),
+                              price: info[index]['price'].toString(),
+                              url: info[index]['url'].toString(),
                             ),
                           );
                     },

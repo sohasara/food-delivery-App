@@ -139,6 +139,7 @@ class HomeScreen extends StatelessWidget {
                   rating: info[index]['rating'].toString(),
                   time: info[index]['time'].toString(),
                   url: info[index]['url'].toString(),
+                  index: index,
                 );
               },
             ),

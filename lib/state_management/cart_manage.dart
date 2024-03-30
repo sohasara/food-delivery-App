@@ -13,4 +13,8 @@ class CartController extends StateNotifier<List<Product>> {
   void addItemToCart(Product product) {
     state = [...state, product];
   }
+
+  void removeItemFromCart(int index) {
+    state = List.from(state)..removeAt(index);
+  }
 }
