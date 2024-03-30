@@ -2,7 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:food_panda/screens/add_to_cart_button.dart';
 
 class DetailPage extends StatelessWidget {
-  const DetailPage({super.key});
+  final String url;
+  final String name;
+  final int index;
+  const DetailPage({
+    super.key,
+    required this.name,
+    required this.url,
+    required this.index,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -26,19 +34,19 @@ class DetailPage extends StatelessWidget {
                     topRight: Radius.circular(25),
                   ),
                 ),
-                child: const Column(
+                child: Column(
                   children: [
-                    SizedBox(
+                    const SizedBox(
                       height: 170,
                     ),
                     Text(
-                      'Beef Pizza',
-                      style: TextStyle(
+                      name,
+                      style: const TextStyle(
                         fontSize: 25,
                         fontWeight: FontWeight.w900,
                       ),
                     ),
-                    Padding(
+                    const Padding(
                       padding: EdgeInsets.only(left: 15.0),
                       child: Text(
                         'the beef, traditional pizza sauce made from tom garlic, and herbs serves as the flavorful foundation. Cheese, usually mozzarella or a blend of cheeses, is generously layered on top of the sauce to add creaminess and richness.',
@@ -47,10 +55,10 @@ class DetailPage extends StatelessWidget {
                         ),
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 25,
                     ),
-                    Row(
+                    const Row(
                       children: [
                         SizedBox(
                           width: 10,
@@ -91,10 +99,12 @@ class DetailPage extends StatelessWidget {
                         ),
                       ],
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 30,
                     ),
-                    CartButton(),
+                    CartButton(
+                      index: index,
+                    ),
                   ],
                 ),
               ),
@@ -103,9 +113,7 @@ class DetailPage extends StatelessWidget {
           SizedBox(
             height: 400,
             width: 420,
-            child: Image.asset(
-              'assets/pizza4.png',
-            ),
+            child: Image.asset(url),
           ),
         ],
       ),

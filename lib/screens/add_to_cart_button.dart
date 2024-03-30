@@ -5,7 +5,8 @@ import 'package:food_panda/main.dart';
 import 'package:food_panda/state_management/cart_manage.dart';
 
 class CartButton extends ConsumerWidget {
-  const CartButton({super.key});
+  final int index;
+  const CartButton({super.key, required this.index});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -13,9 +14,9 @@ class CartButton extends ConsumerWidget {
     return GestureDetector(
       onTap: () {
         ref.read(cartProvider.notifier).addItemToCart(Product(
-              name: info[0]['item_name'].toString(),
-              price: info[0]['price'].toString(),
-              url: info[0]['url'].toString(),
+              name: info[index]['item_name'].toString(),
+              price: info[index]['price'].toString(),
+              url: info[index]['url'].toString(),
             ));
       },
       child: Container(

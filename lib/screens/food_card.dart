@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:food_panda/data/main_page_info.dart';
 import 'package:food_panda/main.dart';
+
 import 'package:food_panda/screens/details_screen.dart';
+
 import 'package:food_panda/state_management/cart_manage.dart';
 
 class FoodCard extends StatelessWidget {
@@ -26,8 +28,14 @@ class FoodCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        Navigator.push(context,
-            MaterialPageRoute(builder: (context) => const DetailPage()));
+        Navigator.push(
+            context,
+            MaterialPageRoute(
+                builder: (context) => DetailPage(
+                      name: name,
+                      url: url,
+                      index: index,
+                    )));
       },
       child: Container(
         height: 270,
