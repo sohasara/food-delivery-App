@@ -110,10 +110,11 @@ class DetailPage extends StatelessWidget {
               ),
             ],
           ),
-          SizedBox(
+          Image.asset(
+            url,
+            fit: BoxFit.fill,
             height: 400,
             width: 420,
-            child: Image.asset(url),
           ),
         ],
       ),

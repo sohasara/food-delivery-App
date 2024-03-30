@@ -127,19 +127,26 @@ class HomeScreen extends StatelessWidget {
               physics: const NeverScrollableScrollPhysics(),
               gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                 crossAxisCount: 2,
-                crossAxisSpacing: 20,
+                crossAxisSpacing: 10,
                 mainAxisSpacing: 20,
                 childAspectRatio: 0.8,
               ),
               itemCount: info.length,
               itemBuilder: (context, index) {
-                return FoodCard(
-                  name: info[index]['item_name'].toString(),
-                  price: info[index]['price'].toString(),
-                  rating: info[index]['rating'].toString(),
-                  time: info[index]['time'].toString(),
-                  url: info[index]['url'].toString(),
-                  index: index,
+                return Padding(
+                  padding: const EdgeInsets.only(
+                    left: 10,
+                    right: 8,
+                    bottom: 8,
+                  ),
+                  child: FoodCard(
+                    name: info[index]['item_name'].toString(),
+                    price: info[index]['price'].toString(),
+                    rating: info[index]['rating'].toString(),
+                    time: info[index]['time'].toString(),
+                    url: info[index]['url'].toString(),
+                    index: index,
+                  ),
                 );
               },
             ),
