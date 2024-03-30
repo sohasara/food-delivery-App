@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:food_panda/data/main_page_info.dart';
+import 'package:food_panda/main.dart';
 import 'package:food_panda/screens/details_screen.dart';
+import 'package:food_panda/state_management/cart_manage.dart';
 
 class FoodCard extends StatelessWidget {
   final String url;
@@ -7,6 +11,7 @@ class FoodCard extends StatelessWidget {
   final String time;
   final String rating;
   final String price;
+
   const FoodCard({
     super.key,
     required this.name,
@@ -23,72 +28,85 @@ class FoodCard extends StatelessWidget {
         Navigator.push(context,
             MaterialPageRoute(builder: (context) => const DetailPage()));
       },
-      child: SizedBox(
+      child: Container(
         height: 270,
         width: 180,
-        child: Card(
-          shadowColor: Colors.white,
-          elevation: 1,
-          child: Column(
-            children: [
-              SizedBox(
-                height: 150,
-                width: 200,
-                child: Image.asset(
-                  url,
-                  fit: BoxFit.cover,
+        decoration: BoxDecoration(
+          border: Border.all(
+            width: 0.4,
+          ),
+          borderRadius: BorderRadius.circular(15),
+        ),
+        child: Column(
+          children: [
+            SizedBox(
+              height: 150,
+              width: 200,
+              child: Image.asset(
+                url,
+                fit: BoxFit.cover,
+              ),
+            ),
+            Text(
+              name,
+              style: const TextStyle(
+                fontWeight: FontWeight.w900,
+                fontSize: 15,
+              ),
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: [
+                const SizedBox(
+                  width: 10,
                 ),
-              ),
-              Text(
-                name,
-                style: const TextStyle(
-                  fontWeight: FontWeight.w900,
-                  fontSize: 15,
+                Text(
+                  time,
+                  style: const TextStyle(
+                    fontSize: 13,
+                  ),
                 ),
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.start,
-                children: [
-                  const SizedBox(
-                    width: 10,
+                const SizedBox(
+                  width: 66,
+                ),
+                const Icon(
+                  Icons.star_border_outlined,
+                  color: Colors.pink,
+                ),
+                Text(rating),
+              ],
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                Text(
+                  price,
+                  style: const TextStyle(
+                    fontWeight: FontWeight.w900,
+                    fontSize: 18,
                   ),
-                  Text(
-                    time,
-                    style: const TextStyle(
-                      fontSize: 13,
-                    ),
-                  ),
-                  const SizedBox(
-                    width: 66,
-                  ),
-                  const Icon(
-                    Icons.star_border_outlined,
-                    color: Colors.pink,
-                  ),
-                  Text(rating),
-                ],
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                  Text(
-                    price,
-                    style: const TextStyle(
-                      fontWeight: FontWeight.w900,
-                      fontSize: 18,
-                    ),
-                  ),
-                  IconButton(
-                    onPressed: () {},
+                ),
+                Consumer(builder: (context, ref, index) {
+                  ref.watch(cartProvider);
+                  return IconButton(
+                    onPressed: () {
+                      ref.read(cartProvider.notifier).addItemToCart(
+                            Product(
+                              name: info[0]['item_name'].toString(),
+                              price: info[0]['price'].toString(),
+                              url: info[0]['url'].toString(),
+                            ),
+                          );
+                    },
                     icon: const Icon(
-                      Icons.add_box,
+                      Icons.shopping_cart,
                       color: Colors.pink,
                     ),
-                  ),
-                ],
-              ),
-            ],
-          ),
+                  );
+                }),
+              ],
+            ),
+          ],
         ),
       ),
     );
