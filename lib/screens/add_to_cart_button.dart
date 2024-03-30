@@ -1,19 +1,22 @@
 import 'package:flutter/material.dart';
-import 'package:food_panda/screens/cart_page.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:food_panda/data/main_page_info.dart';
+import 'package:food_panda/main.dart';
+import 'package:food_panda/state_management/cart_manage.dart';
 
-class CartButton extends StatelessWidget {
+class CartButton extends ConsumerWidget {
   const CartButton({super.key});
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
+    ref.watch(cartProvider);
     return GestureDetector(
       onTap: () {
-        Navigator.push(
-          context,
-          MaterialPageRoute(
-            builder: (context) => const CartPage(),
-          ),
-        );
+        ref.read(cartProvider.notifier).addItemToCart(Product(
+              name: info[0]['item_name'].toString(),
+              price: info[0]['price'].toString(),
+              url: info[0]['url'].toString(),
+            ));
       },
       child: Container(
         height: 50,

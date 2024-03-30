@@ -1,14 +1,16 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-class CartItem {
+class Product {
   final String name;
-  final double price;
-  CartItem({required this.name, required this.price});
+  final String price;
+  final String url;
+  Product({required this.name, required this.price, required this.url});
 }
 
-class CartNotifier extends StateNotifier {
-  CartNotifier(super.state);
-  void addItem(CartItem item) {
-    state = [...state, item];
+class CartController extends StateNotifier<List<Product>> {
+  CartController() : super([]);
+
+  void addItemToCart(Product product) {
+    state = [...state, product];
   }
 }
