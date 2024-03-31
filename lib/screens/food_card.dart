@@ -27,13 +27,15 @@ class FoodCard extends StatelessWidget {
     return GestureDetector(
       onTap: () {
         Navigator.push(
-            context,
-            MaterialPageRoute(
-                builder: (context) => DetailPage(
-                      name: name,
-                      url: url,
-                      index: index,
-                    )));
+          context,
+          MaterialPageRoute(
+            builder: (context) => DetailPage(
+              name: name,
+              url: url,
+              index: index,
+            ),
+          ),
+        );
       },
       child: Container(
         height: 270,
