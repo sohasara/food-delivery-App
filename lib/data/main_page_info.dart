@@ -8,14 +8,6 @@ final info = [
     'price': '\$10.00',
   },
   {
-    'index': '0',
-    'url': 'assets/pizza5.png',
-    'item_name': 'Vegan Pizza',
-    'time': '15min',
-    'rating': '4.2',
-    'price': '\$10.00',
-  },
-  {
     'index': '1',
     'url': 'assets/pizza6.png',
     'item_name': ' Beef Pizza',
@@ -24,7 +16,23 @@ final info = [
     'price': '\$10.00',
   },
   {
-    'index': '2',
+    'index': '3',
+    'url': 'assets/pizza5.png',
+    'item_name': 'Vegan Pizza',
+    'time': '15min',
+    'rating': '4.2',
+    'price': '\$10.00',
+  },
+  {
+    'index': '4',
+    'url': 'assets/pizza6.png',
+    'item_name': ' Beef Pizza',
+    'time': '15min',
+    'rating': '4.2',
+    'price': '\$10.00',
+  },
+  {
+    'index': '5',
     'url': 'assets/pizza2.png',
     'item_name': 'Basic Pizza',
     'time': '10min',
@@ -32,7 +40,7 @@ final info = [
     'price': '\$11.00',
   },
   {
-    'index': '3',
+    'index': '6',
     'url': 'assets/burger3.png',
     'item_name': 'mutton burger',
     'time': '15min',
@@ -40,7 +48,7 @@ final info = [
     'price': '\$10.00',
   },
   {
-    'index': '4',
+    'index': '7',
     'url': 'assets/soup2.png',
     'item_name': 'chicken soup',
     'time': '15min',
@@ -48,7 +56,7 @@ final info = [
     'price': '\$10.00',
   },
   {
-    'index': '5',
+    'index': '8',
     'url': 'assets/salad1.png',
     'item_name': 'Tomatoo Salad',
     'time': '15min',
@@ -56,7 +64,7 @@ final info = [
     'price': '\$10.00',
   },
   {
-    'index': '6',
+    'index': '9',
     'url': 'assets/pizza3.png',
     'item_name': 'Chicken Pizza',
     'time': '23min',
@@ -64,7 +72,7 @@ final info = [
     'price': '\$15.00',
   },
   {
-    'index': '7',
+    'index': '10',
     'url': 'assets/pizza6.png',
     'item_name': 'Papperoni Pizza',
     'time': '15min',
@@ -72,7 +80,7 @@ final info = [
     'price': '\$10.00',
   },
   {
-    'index': '8',
+    'index': '11',
     'url': 'assets/salad2.png',
     'item_name': 'Fruit Salad',
     'time': '15min',
@@ -80,7 +88,7 @@ final info = [
     'price': '\$10.00',
   },
   {
-    'index': '9',
+    'index': '12',
     'url': 'assets/burger6.png',
     'item_name': 'juicy burger',
     'time': '15min',
@@ -88,7 +96,7 @@ final info = [
     'price': '\$10.00',
   },
   {
-    'index': '10',
+    'index': '13',
     'url': 'assets/salad3.png',
     'item_name': 'Mix Salad',
     'time': '15min',
@@ -96,7 +104,7 @@ final info = [
     'price': '\$10.00',
   },
   {
-    'index': '11',
+    'index': '14',
     'url': 'assets/sandwich3.png',
     'item_name': 'Chicken Sandwich',
     'time': '15min',
@@ -104,7 +112,7 @@ final info = [
     'price': '\$10.00',
   },
   {
-    'index': '12',
+    'index': '15',
     'url': 'assets/salad4.png',
     'item_name': 'Chicken Salad',
     'time': '15min',
@@ -112,7 +120,7 @@ final info = [
     'price': '\$10.00',
   },
   {
-    'index': '13',
+    'index': '16',
     'url': 'assets/salad5.png',
     'item_name': 'Basic Salad',
     'time': '15min',
@@ -120,7 +128,7 @@ final info = [
     'price': '\$10.00',
   },
   {
-    'index': '14',
+    'index': '17',
     'url': 'assets/sandwich1.png',
     'item_name': 'Club Sandwich',
     'time': '15min',
@@ -128,7 +136,7 @@ final info = [
     'price': '\$10.00',
   },
   {
-    'index': '15',
+    'index': '18',
     'url': 'assets/sandwich2.png',
     'item_name': 'Cheese Sandwich ',
     'time': '15min',
@@ -136,7 +144,7 @@ final info = [
     'price': '\$10.00',
   },
   {
-    'index': '16',
+    'index': '19',
     'url': 'assets/sandwich4.png',
     'item_name': 'Beef Sandwich',
     'time': '15min',
@@ -144,7 +152,7 @@ final info = [
     'price': '\$10.00',
   },
   {
-    'index': '17',
+    'index': '20',
     'url': 'assets/sandwich6.png',
     'item_name': 'Vegetable Sandwich',
     'time': '15min',
@@ -152,7 +160,7 @@ final info = [
     'price': '\$10.00',
   },
   {
-    'index': '18',
+    'index': '21',
     'url': 'assets/soup5.png',
     'item_name': 'cream soup',
     'time': '15min',
@@ -160,7 +168,7 @@ final info = [
     'price': '\$10.00',
   },
   {
-    'index': '19',
+    'index': '22',
     'url': 'assets/sandwich5.png',
     'item_name': 'Basic Sandwich ',
     'time': '15min',
@@ -168,7 +176,7 @@ final info = [
     'price': '\$10.00',
   },
   {
-    'index': '20',
+    'index': '23',
     'url': 'assets/soup1.png',
     'item_name': 'tomatoo soup',
     'time': '15min',
@@ -176,7 +184,7 @@ final info = [
     'price': '\$10.00',
   },
   {
-    'index': '21',
+    'index': '24',
     'url': 'assets/soup3.png',
     'item_name': 'green soup',
     'time': '15min',
@@ -184,7 +192,7 @@ final info = [
     'price': '\$10.00',
   },
   {
-    'index': '22',
+    'index': '25',
     'url': 'assets/soup4.png',
     'item_name': 'thai soup',
     'time': '15min',
@@ -192,7 +200,7 @@ final info = [
     'price': '\$10.00',
   },
   {
-    'index': '23',
+    'index': '26',
     'url': 'assets/burger1.png',
     'item_name': 'basic burger',
     'time': '15min',
@@ -200,7 +208,7 @@ final info = [
     'price': '\$10.00',
   },
   {
-    'index': '24',
+    'index': '27',
     'url': 'assets/burger2.png',
     'item_name': 'vegan burger',
     'time': '15min',
@@ -208,7 +216,7 @@ final info = [
     'price': '\$10.00',
   },
   {
-    'index': '25',
+    'index': '28',
     'url': 'assets/burger4.png',
     'item_name': 'chicken burger',
     'time': '15min',
@@ -216,7 +224,7 @@ final info = [
     'price': '\$10.00',
   },
   {
-    'index': '26',
+    'index': '29',
     'url': 'assets/burger5.png',
     'item_name': 'beef burger',
     'time': '15min',
@@ -224,7 +232,7 @@ final info = [
     'price': '\$10.00',
   },
   {
-    'index': '27',
+    'index': '30',
     'url': 'assets/hotdog1.png',
     'item_name': 'cheese hotdog',
     'time': '15min',
@@ -232,7 +240,7 @@ final info = [
     'price': '\$10.00',
   },
   {
-    'index': '28',
+    'index': '31',
     'url': 'assets/hotdog2.png',
     'item_name': 'naga hotdog',
     'time': '15min',
@@ -240,7 +248,7 @@ final info = [
     'price': '\$10.00',
   },
   {
-    'index': '29',
+    'index': '32',
     'url': 'assets/hotdog3.png',
     'item_name': ' basic hotdog',
     'time': '15min',
@@ -248,7 +256,7 @@ final info = [
     'price': '\$10.00',
   },
   {
-    'index': '30',
+    'index': '33',
     'url': 'assets/hotdog4.png',
     'item_name': 'hotdog',
     'time': '15min',
