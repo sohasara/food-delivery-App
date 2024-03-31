@@ -30,22 +30,32 @@ class CartButton extends ConsumerWidget {
         );
       },
       child: Container(
-        height: 50,
-        width: 320,
-        decoration: BoxDecoration(
-          color: Colors.pink,
-          borderRadius: BorderRadius.circular(15),
-        ),
-        child: const Center(
-            child: Text(
-          'Add To Cart',
-          style: TextStyle(
-            fontSize: 18,
-            color: Colors.white,
-            fontWeight: FontWeight.bold,
+          height: 50,
+          width: 320,
+          decoration: BoxDecoration(
+            color: Colors.pink,
+            borderRadius: BorderRadius.circular(15),
           ),
-        )),
-      ),
+          child: const Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Icon(
+                Icons.shopping_cart_checkout,
+                color: Colors.white,
+              ),
+              SizedBox(
+                width: 10,
+              ),
+              Text(
+                'Add To Cart',
+                style: TextStyle(
+                  fontSize: 18,
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ],
+          )),
     );
   }
 }

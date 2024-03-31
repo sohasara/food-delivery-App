@@ -96,6 +96,7 @@ class FoodCard extends StatelessWidget {
                 Consumer(builder: (context, ref, _) {
                   ref.watch(cartProvider);
                   return IconButton(
+                    tooltip: 'cart',
                     onPressed: () {
                       ref.read(cartProvider.notifier).addItemToCart(
                             Product(
@@ -116,7 +117,7 @@ class FoodCard extends StatelessWidget {
                       );
                     },
                     icon: const Icon(
-                      Icons.shopping_cart,
+                      Icons.shopping_cart_sharp,
                       color: Colors.pink,
                     ),
                   );
