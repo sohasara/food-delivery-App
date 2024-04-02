@@ -41,7 +41,7 @@ final info = [
   },
   {
     'index': '6',
-    'url': 'assets/burger3.png',
+    'url': 'assets/burger1.png',
     'item_name': 'mutton burger',
     'time': '15min',
     'rating': '4.2',
