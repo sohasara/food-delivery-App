@@ -9,7 +9,7 @@ final info = [
   },
   {
     'index': '1',
-    'url': 'assets/pizza6.png',
+    'url': 'assets/pizza_1.png',
     'item_name': ' Beef Pizza',
     'time': '15min',
     'rating': '4.2',
@@ -17,7 +17,7 @@ final info = [
   },
   {
     'index': '3',
-    'url': 'assets/pizza5.png',
+    'url': 'assets/pizza_2.png',
     'item_name': 'Vegan Pizza',
     'time': '15min',
     'rating': '4.2',
@@ -25,7 +25,7 @@ final info = [
   },
   {
     'index': '4',
-    'url': 'assets/pizza6.png',
+    'url': 'assets/pizza_3.png',
     'item_name': ' Beef Pizza',
     'time': '15min',
     'rating': '4.2',
@@ -33,7 +33,7 @@ final info = [
   },
   {
     'index': '5',
-    'url': 'assets/pizza2.png',
+    'url': 'assets/pizza_4.png',
     'item_name': 'Basic Pizza',
     'time': '10min',
     'rating': '4.3',
@@ -41,7 +41,7 @@ final info = [
   },
   {
     'index': '6',
-    'url': 'assets/burger1.png',
+    'url': 'assets/burger_1.png',
     'item_name': 'mutton burger',
     'time': '15min',
     'rating': '4.2',
@@ -89,7 +89,7 @@ final info = [
   },
   {
     'index': '12',
-    'url': 'assets/burger6.png',
+    'url': 'assets/burger_2.png',
     'item_name': 'juicy burger',
     'time': '15min',
     'rating': '4.2',
@@ -201,7 +201,7 @@ final info = [
   },
   {
     'index': '26',
-    'url': 'assets/burger1.png',
+    'url': 'assets/Burger_3.png',
     'item_name': 'basic burger',
     'time': '15min',
     'rating': '4.2',
@@ -209,7 +209,7 @@ final info = [
   },
   {
     'index': '27',
-    'url': 'assets/burger2.png',
+    'url': 'assets/burger_4.png',
     'item_name': 'vegan burger',
     'time': '15min',
     'rating': '4.2',
@@ -217,7 +217,7 @@ final info = [
   },
   {
     'index': '28',
-    'url': 'assets/burger4.png',
+    'url': 'assets/burger_5.png',
     'item_name': 'chicken burger',
     'time': '15min',
     'rating': '4.2',
@@ -225,7 +225,7 @@ final info = [
   },
   {
     'index': '29',
-    'url': 'assets/burger5.png',
+    'url': 'assets/burger_6.png',
     'item_name': 'beef burger',
     'time': '15min',
     'rating': '4.2',
@@ -233,7 +233,7 @@ final info = [
   },
   {
     'index': '30',
-    'url': 'assets/hotdog1.png',
+    'url': 'assets/hot_dog_1.png',
     'item_name': 'cheese hotdog',
     'time': '15min',
     'rating': '4.2',
@@ -241,7 +241,7 @@ final info = [
   },
   {
     'index': '31',
-    'url': 'assets/hotdog2.png',
+    'url': 'assets/hot_dog_2.png',
     'item_name': 'naga hotdog',
     'time': '15min',
     'rating': '4.2',
@@ -249,7 +249,7 @@ final info = [
   },
   {
     'index': '32',
-    'url': 'assets/hotdog3.png',
+    'url': 'assets/hot_dog_3.png',
     'item_name': ' basic hotdog',
     'time': '15min',
     'rating': '4.2',
@@ -257,7 +257,7 @@ final info = [
   },
   {
     'index': '33',
-    'url': 'assets/hotdog4.png',
+    'url': 'assets/hot_dog_4.png',
     'item_name': 'hotdog',
     'time': '15min',
     'rating': '4.2',
