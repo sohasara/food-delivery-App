@@ -3,6 +3,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:food_panda/screens/1st_screen.dart';
 import 'package:food_panda/state_management/cart_manage.dart';
 
+final cartItemCountProvider = StateProvider<int>((ref) => 0);
+
 final cartProvider =
     StateNotifierProvider<CartController, List<Product>>((ref) {
   return CartController();

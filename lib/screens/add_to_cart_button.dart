@@ -13,21 +13,23 @@ class CartButton extends ConsumerWidget {
     ref.watch(cartProvider);
     return GestureDetector(
       onTap: () {
-        ref.read(cartProvider.notifier).addItemToCart(Product(
+        ref.read(cartProvider.notifier).addItemToCart(
+            Product(
               name: info[index]['item_name'].toString(),
               price: info[index]['price'].toString(),
               url: info[index]['url'].toString(),
-            ));
-
-        ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(
-            backgroundColor: Colors.pink,
-            content: Text(
-              'Successfully added to  the cart',
             ),
-            duration: Duration(seconds: 2),
-          ),
-        );
+            context);
+
+        // ScaffoldMessenger.of(context).showSnackBar(
+        //   const SnackBar(
+        //     backgroundColor: Colors.pink,
+        //     content: Text(
+        //       'Successfully added to  the cart',
+        //     ),
+        //     duration: Duration(seconds: 2),
+        //   ),
+        // );
       },
       child: Container(
           height: 50,

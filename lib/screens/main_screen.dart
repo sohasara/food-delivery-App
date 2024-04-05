@@ -1,16 +1,20 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import 'package:food_panda/data/main_page_info.dart';
+import 'package:food_panda/main.dart';
 import 'package:food_panda/screens/cart_page.dart';
 
 import 'package:food_panda/screens/food_card.dart';
 import 'package:food_panda/screens/search_bar.dart';
 
-class HomeScreen extends StatelessWidget {
+class HomeScreen extends ConsumerWidget {
   const HomeScreen({super.key});
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
+    ref.watch(cartItemCountProvider);
+
     return Scaffold(
       body: SingleChildScrollView(
         scrollDirection: Axis.vertical,
@@ -37,20 +41,21 @@ class HomeScreen extends StatelessWidget {
                     width: 230,
                   ),
                   IconButton(
-                      tooltip: 'Item cart',
-                      onPressed: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => const CartPage(),
-                          ),
-                        );
-                      },
-                      icon: const Icon(
-                        Icons.shopping_cart,
-                        size: 28,
-                        color: Colors.pink,
-                      )),
+                    tooltip: 'Item cart',
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const CartPage(),
+                        ),
+                      );
+                    },
+                    icon: const Icon(
+                      Icons.shopping_cart,
+                      size: 28,
+                      color: Colors.pink,
+                    ),
+                  ),
                 ],
               ),
             ),
