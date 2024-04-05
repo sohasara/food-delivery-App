@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import 'package:food_panda/data/main_page_info.dart';
-import 'package:food_panda/main.dart';
+
 import 'package:food_panda/screens/cart_page.dart';
 
 import 'package:food_panda/screens/food_card.dart';
@@ -13,8 +13,6 @@ class HomeScreen extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    ref.watch(cartItemCountProvider);
-
     return Scaffold(
       body: SingleChildScrollView(
         scrollDirection: Axis.vertical,
