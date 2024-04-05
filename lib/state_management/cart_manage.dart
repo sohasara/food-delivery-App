@@ -11,11 +11,7 @@ class Product {
 class CartController extends StateNotifier<List<Product>> {
   CartController() : super([]);
 
-  // void addItemToCart(Product product) {
-  //   state = [...state, product];
-  // }
   void addItemToCart(Product product, BuildContext context) {
-    // Check if the product is already in the cart
     final alreadyInCart = state.any((item) => item.name == product.name);
     if (!alreadyInCart) {
       state = [...state, product];
@@ -33,7 +29,7 @@ class CartController extends StateNotifier<List<Product>> {
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
           backgroundColor: Colors.red,
-          content: Text('Item ${product.name} is already in the cart.'),
+          content: Text(' ${product.name} is already in the cart.'),
           duration: const Duration(seconds: 2),
         ),
       );
