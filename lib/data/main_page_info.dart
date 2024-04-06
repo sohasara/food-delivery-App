@@ -57,7 +57,7 @@ final info = [
   },
   {
     'index': '8',
-    'url': 'assets/burger_3.png',
+    'url': 'assets/Burger_3.png',
     'item_name': 'Tomatoo Salad',
     'time': '15min',
     'rating': '4.2',
@@ -107,14 +107,6 @@ final info = [
     'index': '14',
     'url': 'assets/salad_3.png',
     'item_name': 'Chicken Sandwich',
-    'time': '15min',
-    'rating': '4.2',
-    'price': '\$10.00',
-  },
-  {
-    'index': '15',
-    'url': 'assets/salad_4.png',
-    'item_name': 'Chicken Salad',
     'time': '15min',
     'rating': '4.2',
     'price': '\$10.00',
