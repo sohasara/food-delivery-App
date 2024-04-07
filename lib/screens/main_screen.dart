@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-
 import 'package:food_panda/data/main_page_info.dart';
-
 import 'package:food_panda/screens/cart_page.dart';
-
 import 'package:food_panda/screens/food_card.dart';
 import 'package:food_panda/screens/search_bar.dart';
 
@@ -50,7 +47,7 @@ class HomeScreen extends ConsumerWidget {
                     },
                     icon: const Icon(
                       Icons.shopping_cart,
-                      size: 28,
+                      size: 32,
                       color: Colors.pink,
                     ),
                   ),
@@ -125,6 +122,11 @@ class HomeScreen extends ConsumerWidget {
               ),
             ),
             const SizedBox(height: 5),
+            /////////////////////////////////////////////////////////////////
+            ///////////////////////////////////////////////////////////////
+            ///////////////////////////////////////////////////////////////
+            ///food card
+
             GridView.builder(
               shrinkWrap: true,
               physics: const NeverScrollableScrollPhysics(),
