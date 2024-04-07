@@ -13,8 +13,11 @@ class CartPage extends ConsumerWidget {
       appBar: AppBar(
         centerTitle: true,
         title: const Text(
-          ' Your Cart',
-          style: TextStyle(fontWeight: FontWeight.bold, color: Colors.pink),
+          ' YOUR  ITEM  CART',
+          style: TextStyle(
+            fontWeight: FontWeight.w900,
+            color: Colors.pink,
+          ),
         ),
       ),
       body: ListView.builder(
