@@ -47,7 +47,10 @@ class DetailPage extends StatelessWidget {
                       ),
                     ),
                     const Padding(
-                      padding: EdgeInsets.only(left: 15.0),
+                      padding: EdgeInsets.only(
+                        left: 15.0,
+                        top: 10,
+                      ),
                       child: Text(
                         'the beef, traditional pizza sauce made from tom garlic, and herbs serves as the flavorful foundation. Cheese, usually mozzarella or a blend of cheeses, is generously layered on top of the sauce to add creaminess and richness.',
                         style: TextStyle(
